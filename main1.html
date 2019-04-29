@@ -1,0 +1,40 @@
+<html>
+<title>Election Commission</title>
+<head>
+
+<script>
+function setImage(select){
+  var image = document.getElementsByName("image-swap")[0];
+  image.src = select.options[select.selectedIndex].value;
+} 
+</script>
+</head>
+<body style="background-color:powderblue;">
+<center>
+<h1>ELECTION COMMISSION OF INDIA</h1>
+<h2>GENERAL ELECTION TO VIDHAN SABHA TRENDS & RESULT 2018</h2>
+<a href="main1.html">Partywise</a>
+<a href="main2.html">Constituencywise-All Candidates</a>
+<a href="main.html">Constituencywise Trends</a>
+<!--<h5>Partywise</h5>-->
+<br>
+<h1 style="color:red;">Partywise</h1>
+<label>Select State</label>
+<select name="states" id="stateid" onchange="setImage(this);">
+  <option value="ec.jpg"/>Choose State</option>
+  <option value="Telangana.png"/>Telangana</option>
+  <option value="Mizoram.png"/>Mizoram</option>
+  <option value="Rajasthan.png">Rajasthan</option>
+  <option value="Madhyapradesh.png"/>Madhyapradesh</option>
+  <option value="Chattisgarh.png"/>Chattisgarh</option>
+</select>
+<br>
+<br>
+<br>
+
+<img src="" name="image-swap" height="520" width="520" />  
+
+
+</center>
+</body>
+</html>
